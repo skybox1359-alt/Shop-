@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 17 - Premium Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🍎 iPhone 17 Store</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#models">Models</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a class="cart-icon" href="#cart">🛒 <span id="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>iPhone 17</h1>
+            <p>Revolutionary Design. Incredible Power.</p>
+            <button class="cta-btn">Explore Now</button>
+        </div>
+        <div id="canvas-container" class="canvas-container"></div>
+    </section>
+
+    <section id="models" class="models-section">
+        <h2>Choose Your Model</h2>
+        <div class="model-grid">
+            <div class="model-card" data-model="standard">
+                <div class="model-preview" id="preview-standard"></div>
+                <h3>iPhone 17</h3>
+                <p class="price">$799</p>
+                <ul class="features">
+                    <li>6.1" Super Retina Display</li>
+                    <li>A18 Bionic Chip</li>
+                    <li>Pro Camera System</li>
+                </ul>
+                <button class="add-to-cart" data-product="iPhone 17" data-price="799">Add to Cart</button>
+            </div>
+
+            <div class="model-card" data-model="pro">
+                <div class="model-preview" id="preview-pro"></div>
+                <h3>iPhone 17 Pro</h3>
+                <p class="price">$999</p>
+                <ul class="features">
+                    <li>6.3" Super Retina XDR Display</li>
+                    <li>A18 Pro Chip</li>
+                    <li>Advanced Pro Camera</li>
+                </ul>
+                <button class="add-to-cart" data-product="iPhone 17 Pro" data-price="999">Add to Cart</button>
+            </div>
+
+            <div class="model-card" data-model="pro-max">
+                <div class="model-preview" id="preview-pro-max"></div>
+                <h3>iPhone 17 Pro Max</h3>
+                <p class="price">$1199</p>
+                <ul class="features">
+                    <li>6.9" Super Retina XDR Display</li>
+                    <li>A18 Pro Chip</li>
+                    <li>Professional Camera Array</li>
+                </ul>
+                <button class="add-to-cart" data-product="iPhone 17 Pro Max" data-price="1199">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="specs-section">
+        <h2>Specifications</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>🔋 Battery</h3>
+                <p>Up to 29 hours of battery life</p>
+            </div>
+            <div class="spec-card">
+                <h3>📸 Camera</h3>
+                <p>Advanced computational photography</p>
+            </div>
+            <div class="spec-card">
+                <h3>🎮 Performance</h3>
+                <p>A18 Bionic - Lightning fast</p>
+            </div>
+            <div class="spec-card">
+                <h3>💾 Storage</h3>
+                <p>Up to 2TB capacity</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (10%):</span>
+                    <span id="tax">$0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 iPhone 17 Store. All rights reserved. 🍎</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+          </html>
